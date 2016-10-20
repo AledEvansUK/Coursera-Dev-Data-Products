@@ -1,30 +1,23 @@
-
-# This is the user-interface definition of a Shiny web application.
-# You can find out more about building applications with Shiny here:
-#
-# http://shiny.rstudio.com
-#
-
 library(shiny)
+library(shinythemes)
 
-shinyUI(fluidPage(
-
-  # Application title
-  titlePanel("Old Faithful Geyser Data"),
-
-  # Sidebar with a slider input for number of bins
-  sidebarLayout(
-    sidebarPanel(
-      sliderInput("bins",
-                  "Number of bins:",
-                  min = 1,
-                  max = 50,
-                  value = 30)
+shinyUI <- fluidPage(theme=shinytheme("superhero"),
+    titlePanel("Population changes in Wild British Birds"),
+    
+    sidebarLayout(
+        sidebarPanel(
+            h5("Discover the population changes in four wild bird groups in the UK from 1975 to 2014"),
+            br(),
+            selectInput(inputId = "birdtype", 
+                        label = "Select a bird grouping:",
+                        choices = c("Farmland.Birds", "Woodland.Birds", "Water.And.Wetland.Birds", "Wintering.Water.Birds"),
+                        selected = "Farmland.Birds"),
+        
+        br(),
+        helpText("The data covers the years 1975 to 2014 and is obtained from the dataset 'Wild Bird Populations in the UK' under a OGL ('Open Government Licence'). Click ", tags$a(href="http://data.defra.gov.uk/statistics_2015/env/bd/uk_birds_2015d.csv", "here"), "for the source datset. The source webapge with further notes on dataset can be found ", tags$a(href="https://data.gov.uk/dataset/wild_bird_populations/resource/16bcd620-c404-47ed-8cda-5315b24bf0c5", "here."))
     ),
-
-    # Show a plot of the generated distribution
-    mainPanel(
-      plotOutput("distPlot")
+        mainPanel(
+            plotOutput("plot1")
+            )
     )
-  )
-))
+)

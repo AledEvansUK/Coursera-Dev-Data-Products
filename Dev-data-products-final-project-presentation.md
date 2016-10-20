@@ -12,11 +12,11 @@ font-family: "Calabri"
 Introduction
 ========================================================
 
-- This document briefly describes the Shiny web application used to discover the changes in population of four groups of British wild birds in the period 1975 to 2014. 
+- This document briefly describes the Shiny web application used to discover the changes in population of four groups of British wild birds in the period 1975 to 2014. The app can be found on the Shiny server at: [link to shinyapps.io](https://aledevans.shinyapps.io/Coursera-Dev-Data-Products-Final-Project/)
 
 - The data is from 'Wild Bird Populations in the UK' (publsihed by the Uk Government). For the source webapge - including notes on dataset and the dataset for download - click here: [Link to data.gov.uk](https://data.gov.uk/dataset/wild_bird_populations/resource/16bcd620-c404-47ed-8cda-5315b24bf0c5)
 
-- Notes for the data processing can be found in the file: uk-bird-data-4-groups.R. This file can be viewed in the github repository for this project: [Link to github]()
+- Notes for the data processing can be found in the file: uk-bird-data-4-groups.R. This file can be viewed in the github repository for this project: [Link to github](https://github.com/AledEvansUK/Coursera-Dev-Data-Products)
 
 
 
