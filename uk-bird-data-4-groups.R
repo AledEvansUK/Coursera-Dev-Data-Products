@@ -7,7 +7,7 @@
 
 library(dplyr) 
 
-
+ukbirdsData <- read.csv(("uk_birds_2015d.csv.bz2"), header=TRUE, stringsAsFactors = FALSE)
 
 dim(ukbirdsData)
 
